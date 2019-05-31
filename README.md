@@ -17,3 +17,4 @@ npm run coverage
 ## License
 
 [The MIT License](http://piecioshka.mit-license.org) @ 2019
+# 2019-05-30-test-javascript-shop-backend
