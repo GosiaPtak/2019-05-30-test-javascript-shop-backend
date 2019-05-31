@@ -1,33 +1,46 @@
 {
-    "private": true,
-    "name": "masterclass-2-shop-backend",
-    "description": "",
-    "version": "0.0.0",
-    "license": "MIT",
-    "author": {
-        "name": "Piotr Kowalski",
-        "email": "piecioshka@gmail.com",
-        "url": "https://piecioshka.pl/"
-    },
-    "scripts": {
-        "clear": "rm -rf dist/ coverage/ .nyc_output/",
-        "clear:all": "rm -rf node_modules/ && npm run clear",
-        "test": "mocha test/specs/**/*.js",
-        "start": "node src/app.js",
-        "dev": "nodemon src/app.js",
-        "coverage": "nyc npm run test && nyc report --reporter=html",
-        "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
-        "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
-        "lint": "eslint ."
-    },
-    "devDependencies": {
-        "chai": "^4.2.0",
-        "coveralls": "^3.0.3",
-        "eslint": "^5.15.3",
-        "eslint-config-piecioshka": "^2.0.1",
-        "mocha": "^6.0.2",
-        "nodemon": "^1.19.1",
-        "nyc": "^14.1.1",
-        "supertest": "^4.0.2"
-    }
+  "private": true,
+  "name": "masterclass-2-shop-backend",
+  "description": ":octocat: WarsawJS MasterClass #2 — Shop (back-end)",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "",
+  "scripts": {
+    "clear": "rm -rf dist/ coverage/ .nyc_output/",
+    "clear:all": "rm -rf node_modules/ && npm run clear",
+    "test": "mocha test/specs/*.js",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "coverage": "nyc npm run test && nyc report --reporter=html",
+    "coveralls": "nyc npm run test && nyc report --reporter=text-lcov | coveralls -v",
+    "count": "find . -name '*.js' -not -path './node_modules/*' | xargs wc -l | sort -r",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.15.3",
+    "eslint-config-piecioshka": "^2.0.1",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
+  },
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GosiaPtak/2019-05-30-test-javascript-shop-backend"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/GosiaPtak/2019-05-30-test-javascript-shop-backend/issues"
+  },
+  "homepage": "https://github.com/GosiaPtak/2019-05-30-test-javascript-shop-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
