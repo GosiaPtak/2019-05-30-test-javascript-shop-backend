@@ -41,6 +41,6 @@
   "homepage": "https://github.com/GosiaPtak/2019-05-30-test-javascript-shop-backend#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
